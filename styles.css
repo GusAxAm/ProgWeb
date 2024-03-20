@@ -39,6 +39,7 @@ nav ul li a {
 }
 nav ul li a:hover {
     color: #1a1a19;
+    transform: translateY(-3px);
 }
 
 main {
@@ -48,9 +49,26 @@ main {
     padding: 20px;
 }
 nav ul select{
-place-items: right; 
+    float: right;
+   
 }
-
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.reservation button {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.reservation button:hover {
+    background-color: #444242; 
+}
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -85,7 +103,12 @@ place-items: right;
     border-radius: 3px;
     border: 1px solid #ccc;
 }
-
+.date-picker {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
 .form-group button {
     background-color: #333;
     color: #fff;
@@ -98,6 +121,7 @@ place-items: right;
 .form-group button:hover {
     background-color: #444;
 }
+
 /* Estilos para la sección de galería de imágenes */
 
 #galeria {
@@ -211,7 +235,7 @@ place-items: right;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: none;
+    resize: none    ;
 }
 
 #contacto form button {
@@ -226,6 +250,33 @@ place-items: right;
 #contacto form button:hover {
     background-color: #444;
 }
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
+footer p {
+    margin: 0;
+}
+
+.footer-link {
+    color: #999696;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ff6600; /* Cambia el color al pasar el mouse */
+}
+#language-selector{
+    padding: 4px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
 
 
