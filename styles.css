@@ -1,0 +1,231 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    
+}
+
+header, footer {
+    background-color: #617e8f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #85c2e6;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: #1a1a19;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+    padding: 20px;
+}
+nav ul select{
+place-items: right; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/* Estilos para la sección de reserva */
+.reservation {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.reservation h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #444;
+}
+/* Estilos para la sección de galería de imágenes */
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imagen {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Para mantener la relación de aspecto y recortar la imagen si es necesario */
+}
+.imagen img:hover {
+    transform: scale(1.1);
+    
+}
+
+/* Estilos para la sección de opiniones y comentarios */
+#opiniones {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.comentario {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.comentario h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+/* Estilos para la sección del mapa */
+#mapa {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+#mapa-ubicacion {
+    height: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para la sección de ofertas especiales */
+#ofertas .oferta {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.oferta p {
+    margin-bottom: 0;
+}
+.oferta {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.oferta h3 {
+    margin-top: 0;
+    text-align: center;
+}
+.oferta:hover {
+    transform: translateY(-5px);
+}
+
+/* Estilos para la sección del formulario de contacto */
+#contacto {
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contacto form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+#contacto form input[type="text"],
+#contacto form input[type="email"],
+#contacto form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+#contacto form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#contacto form button:hover {
+    background-color: #444;
+}
+
+
+
