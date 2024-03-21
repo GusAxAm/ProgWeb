@@ -127,7 +127,7 @@ p {
 #galeria {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .imagen {
@@ -150,25 +150,7 @@ p {
     transform: scale(1.1);
     
 }
-
 /* Estilos para la sección de opiniones y comentarios */
-#opiniones {
-    padding: 20px;
-    background-color: #f9f9f9;
-    margin-bottom: 20px;
-}
-
-.comentario {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.comentario h3 {
-    margin-top: 0;
-    color: #333;
-}
 
 /* Estilos para la sección del mapa */
 #mapa {
@@ -183,8 +165,54 @@ p {
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+#opiniones .comentario {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.comentario p{
+    margin-bottom: 0;
+}
+.comentario {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.comentario h3 {
+    margin-top: 0;
+    color: #333;     
+}
+.comentario:hover{
+    transform: translateY(-5px);
+}
 /* Estilos para la sección de ofertas especiales */
+/* #opiniones .comentario {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.comentario p {
+    margin-bottom: 0;
+     align-content: center; 
+}
+.comentario {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.comentario h3 {
+    margin-top: 0;
+   
+}
+.comentario:hover {
+    transform: translateY(-5px);
+} */
 #ofertas .oferta {
     margin-bottom: 20px;
     padding: 20px;
@@ -194,6 +222,7 @@ p {
 }
 .oferta p {
     margin-bottom: 0;
+    /* align-content: center; */
 }
 .oferta {
     margin-bottom: 20px;
@@ -208,7 +237,6 @@ p {
 .oferta:hover {
     transform: translateY(-5px);
 }
-
 /* Estilos para la sección del formulario de contacto */
 #contacto {
     padding: 20px;
@@ -262,14 +290,10 @@ footer p {
 }
 
 .footer-link {
-    color: #999696;
+    color: #999696; 
     text-decoration: none;
     transition: color 0.3s ease;
-}
-
-.footer-link:hover {
-    color: #ff6600; /* Cambia el color al pasar el mouse */
-}
+}   
 #language-selector{
     padding: 4px;
     border: 1px solid #ccc;
