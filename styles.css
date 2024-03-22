@@ -87,9 +87,19 @@ p {
 .reservation h2 {
     margin-bottom: 20px;
 }
+/* Estilo para el formulario de reservación */
+.reservation-form {
+    width: 50%; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
 .form-group {
     margin-bottom: 15px;
+    padding-right: 15px;
 }
 
 .form-group label {
