@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
-    <title>Hotel Resort Inicio</title>
-    
+    <title>Resort Hotel Promocioens</title>
 </head>
 <body>
     <header>
-        <h1>Resort Hotel</h1>
-        
+        <h1 class="logo">Resort Hotel</h1>
     </header>
-    
     <nav>
-        <ul>
-            
-            <li><a href="promociones.html">Promociones</a></li>
-            <li><a href="paquetes.html">Paquetes</a></li>
-            <li><a href="contacto.html">Contactanos</a></li>       
-            <select id="language-selector" onchange="cambiarIdioma()">
-                <option value="es">Español</option>
-                 <option value="en">Inglés</option>
-             </select>                 
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="paquetes.html" class="nav-link">Paquetes</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="ofertas">
+        <h2>Ofertas Especiales</h2>
+        <div class="oferta">
+            <h3>¡Descuento de Verano!</h3>
+            <p>Reserva ahora y obtén un 20% de descuento en todas nuestras habitaciones durante el verano.</p>
+        </div>
+        <div class="oferta">
+            <h3>Paquete Familiar</h3>
+            <p>Aprovecha nuestro paquete familiar y obtén tarifas especiales para toda la familia.</p>
+        </div>
+
+    </section>
     <main>
-        <!--Galeria de imagenes-->
-        <section id="galeria">
-            <h2>Galería de Imágenes</h2>
-            <div class="imagen">
-                <img src="img1.jpg" alt="Imagen 1">
-            </div>
-            <div class="imagen">
-                <img src="img 2.jpg" alt="Imagen 2">
-            </div>
-            <div class="imagen">
-                <img src="img 3.jpg" alt="Imagen 3">
-            </div>
-        </section>
-        <!--Reservacion form-->
         <section class="reservation">
             <h2>Reserva tu habitación</h2>
             <form action="#" method="post">
@@ -67,6 +58,7 @@
                         <option value="solo-hospedaje">Solo hospedaje</option>
                         <option value="hospedaje-desayuno">Hospedaje y desayuno</option>
                         <option value="todo-incluido">Todo incluido</option>
+                        <option value="paquete-familiar">Paquete Familiar</option>
                     </select>
                 </div>
                 <div class="form-group">
@@ -84,49 +76,10 @@
                 <button type="submit">Reservar</button>
             </form>
         </section>
-        
-         <!--Maps-->
-         <!-- <section id="mapa">
-            <h2>Ubicación del Hotel</h2>
-            <div id="mapa-ubicacion"> -->
-            <!--Para poder ingresar un mapa utilizando php-->
-            <!-- </div>
-        </section> -->   
-        <!--Contact form-->
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="#" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-        
-        <section id="opiniones">
-            <h2>Opiniones y Comentarios</h2>
-            <div class="comentario">
-                <h3>Lorena Cigarroa Martinez</h3>
-                <p>¡Excelente hotel! La habitación era cómoda y el personal muy amable.</p>
-            </div>
-            <div class="comentario">
-                <h3>Ing. Martin Oswaldo</h3>
-                <p>Estuve en el hotel el fin de semana pasado y la experiencia fue fantástica. Lo recomendaría a cualquiera.</p>
-            </div>
-        </section>
-        
-    </main>
+        </main>
     <script src = 'Function.js'></script>
     <footer>
         <p>&copy; 2024 Resort Hotel. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
-
-
